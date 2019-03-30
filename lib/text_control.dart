@@ -12,6 +12,17 @@ class _TextControlState extends State<TextControl> {
 
   @override
   Widget build(BuildContext context) {
-    return Text(text);
+    return Column(
+      children: [
+        Container(
+          margin: EdgeInsets.all(10.0),
+          child: RaisedButton(
+            onPressed: () {},
+            child: Text('Change text'),
+          ),
+        ),
+        Text('Here it is'),
+      ],
+    );
   }
 }
