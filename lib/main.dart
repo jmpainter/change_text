@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import './text_control.dart';
+import './text_display.dart';
 
 void main() => runApp(MyApp());
 
