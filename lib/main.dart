@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
         appBar: AppBar(
           title: Text('Change Text'),
         ),
-        body: Text('Hello Worlds'),
+        body: TextControl(),
       ),
     );
   }
