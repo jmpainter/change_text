@@ -10,7 +10,7 @@ class TextControl extends StatefulWidget {
 }
 
 class _TextControlState extends State<TextControl> {
-  String text = 'Hello World';
+  String _text = 'Hello World';
 
   @override
   Widget build(BuildContext context) {
@@ -19,11 +19,15 @@ class _TextControlState extends State<TextControl> {
         Container(
           margin: EdgeInsets.all(10.0),
           child: RaisedButton(
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                _text = 'Goodbye now';
+              });
+            },
             child: Text('Change text'),
           ),
         ),
-        TextControl(),
+        TextDisplay(_text),
       ],
     );
   }
